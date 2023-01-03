@@ -1,8 +1,12 @@
 import styled from "styled-components";
 
-export const StyledMainPage = styled.main`
+export const Container = styled.div`
 	width: 100%;
 	height: 100%;
+	margin: 0 auto;
+	max-width: 1400px;
 	display: flex;
 	flex-direction: column;
+	border: 1px solid red;
+	padding: 1rem;
 `;
