@@ -7,4 +7,6 @@ export const StyledHome = styled.div`
 	flex-direction: column;
 	align-items: center;
 	border: 1px solid red;
+	background-image: url("https://wallpapercave.com/wp/wp4676574.jpg");
+	background-position: center;
 `;

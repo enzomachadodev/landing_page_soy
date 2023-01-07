@@ -1,3 +1,4 @@
+import { useState } from "react";
 import AboutSection from "../components/AboutSection/aboutSection";
 import ContactSection from "../components/ContactSection/contactSection";
 import FooterSection from "../components/FooterSection/footerSection";

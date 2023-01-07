@@ -1,9 +1,14 @@
 import { StyledProcedures } from "./style";
+import { proceduresData } from "../../data";
+import Card from "./Cards/cards";
+import { Container } from "../Container/style";
 
 const ProduceduresSection = () => {
 	return (
 		<StyledProcedures id="procedimentos">
-			<h2>Procedures Section</h2>
+			<Container>
+				<ul>{proceduresData.map((e) => Card(e))}</ul>
+			</Container>
 		</StyledProcedures>
 	);
 };
