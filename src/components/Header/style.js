@@ -39,10 +39,10 @@ export const StyledHeader = styled.header`
 		gap: 20px;
 		margin: 0;
 
-		button {
+		a {
 			position: relative;
 			font-weight: 450;
-			font-size: 0.9rem;
+			font-size: 15px;
 			color: ${({ scroll }) => (scroll ? "black" : "white")};
 			padding-bottom: 1px;
 			transition: 0.5s;
@@ -50,7 +50,7 @@ export const StyledHeader = styled.header`
 			border: none;
 		}
 
-		button::after {
+		a::after {
 			content: "";
 			position: absolute;
 			width: 100%;
@@ -63,7 +63,7 @@ export const StyledHeader = styled.header`
 			transition: transform 0.25s ease-out;
 		}
 
-		li:hover button::after {
+		li:hover a::after {
 			transform: scaleX(1);
 			transform-origin: bottom left;
 		}

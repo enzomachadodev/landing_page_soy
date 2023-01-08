@@ -47,20 +47,16 @@ const Header = () => {
 				<ul className="fixedNav">
 					{menuOptions.map((o) => (
 						<li>
-							<button
-								className="fixedOptions"
-								href={o.href}
-								onClick={() => setOpen(!open)}
-							>
+							<a className="fixedOptions" href={o.href}>
 								{o.name}
-							</button>
+							</a>
 						</li>
 					))}
 				</ul>
 				<StyledBurger open={open} onClick={() => setOpen(!open)}>
-					<div className="scratch" />
-					<div className="scratch" />
-					<div className="scratch" />
+					<div />
+					<div />
+					<div />
 				</StyledBurger>
 			</StyledHeader>
 			<StyledNav open={open}>
