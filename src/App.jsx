@@ -1,4 +1,4 @@
-import MainPage from "./page/mainPage";
+import MainPage from "./page/index";
 import Global from "./styles/global";
 
 const App = () => {

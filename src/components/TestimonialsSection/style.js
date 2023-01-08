@@ -2,36 +2,45 @@ import styled from "styled-components";
 
 export const StyledTestimonial = styled.div`
 	width: 100%;
-	height: 800px;
+	height: 900px;
 	border: 1px solid red;
-	background-color: var(--gray-3);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: 3rem;
+	padding-top: 75px;
+	background-attachment: fixed;
 
-	.carousel {
-		height: 100%;
-		justify-content: space-around;
-	}
-
-	.card {
-		border: 1px solid red;
-		height: 600px;
+	.cardSlider {
+		height: 500px;
+		width: 100%;
+		max-width: 500px;
+		margin: 50px auto;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		align-items: center;
+		justify-content: center;
+		padding: 0rem 2.6rem;
+		border-radius: 40px;
+		background-color: white;
+		-webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.4);
+		-moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.4);
+		box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.4);
 	}
 
-	.innerCard {
+	.clientInfo {
+		width: 100%;
 		max-width: 400px;
-	}
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 20px;
+		overflow: hidden;
 
-	.carousel .control-dots .dot {
-		box-shadow: none;
-		background-color: var(--black);
-		width: 20px;
-		height: 20px;
+		img {
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+		}
 	}
 `;

@@ -6,41 +6,51 @@ export const StyledFooter = styled.footer`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: var(--black);
+	background-color: var(--dark-brown);
 	bottom: 0;
 
-	.container_footer {
-		padding: 1rem;
+	.footerContainer {
 		width: 100%;
-		height: 80%;
-		max-width: 1400px;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		justify-content: space-around;
-		color: var(--gray-1);
+		justify-content: center;
+		height: 100%;
+		border: 1px solid red;
+	}
 
-		h4 {
+	.divLogo {
+		width: 100%;
+		max-width: 200px;
+	}
+
+	.divFooter {
+		border: 1px solid red;
+		width: 100%;
+		max-width: 400px;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 1rem;
+
+		ul {
 			width: 100%;
-			text-align: center;
-			margin-bottom: 20px;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding: 0;
 		}
-	}
 
-	.social_footer {
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: center;
-	}
+		li {
+			border: 1px solid red;
+			margin-bottom: 10px;
+		}
 
-	.contact_footer {
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: center;
+		p {
+			font-size: 1rem;
+		}
 	}
 
 	.rights {
@@ -55,6 +65,7 @@ export const StyledFooter = styled.footer`
 			color: var(--gold);
 		}
 	}
+
 	h4,
 	p,
 	span {
@@ -62,8 +73,5 @@ export const StyledFooter = styled.footer`
 	}
 
 	@media (max-width: 768px) {
-		.container_footer {
-			flex-direction: column;
-		}
 	}
 `;
