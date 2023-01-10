@@ -1,30 +1,24 @@
 import { useState } from "react";
-import CloseButton from "react-bootstrap/CloseButton";
 import { StyledCard } from "./style";
+import { Carousel } from "react-bootstrap";
 
-const Card = (proceObj) => {
-	const [open, setOpen] = useState(false);
-
+const Card = (proceObj, index) => {
 	return (
-		<StyledCard key={proceObj.name} open={open}>
-			<div className="title" data-aos="fade-up" foto={proceObj.img}>
-				<div className="titleBox">
-					<h1 className="proceduresTitle">{proceObj.name}</h1>
-					<button onClick={() => setOpen(true)}>Ver mais</button>
-				</div>
-				<img src={proceObj.img} alt="" />
-			</div>
-
-			<div className="description">
-				<div className="descriptionContainer">
-					<CloseButton onClick={() => setOpen(false)} variant="white" />
-					{proceObj.description.map((e) => (
-						<p key={e} className="proceduresDescription">
-							{e}
-						</p>
-					))}
-				</div>
-			</div>
+		<StyledCard key={proceObj.name}>
+			<Carousel>
+				<Carousel.Item interval={3000} key={index} controls={false}>
+					<img
+						src="https://img.freepik.com/fotos-gratis/mulher-jovem-e-elegante-magnifica-com-grandes-olhos-castanhos-e-um-sorriso-incrivel_291049-2575.jpg?w=2000"
+						alt=""
+					/>
+				</Carousel.Item>
+				<Carousel.Item interval={3000} key={index}>
+					<img
+						src="https://img.freepik.com/fotos-gratis/mulher-jovem-e-elegante-magnifica-com-grandes-olhos-castanhos-e-um-sorriso-incrivel_291049-2575.jpg?w=2000"
+						alt=""
+					/>
+				</Carousel.Item>
+			</Carousel>
 		</StyledCard>
 	);
 };

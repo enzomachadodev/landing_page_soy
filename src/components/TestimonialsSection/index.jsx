@@ -7,12 +7,18 @@ const TestimonialSection = () => {
 	return (
 		<StyledTestimonial id="depoimentos">
 			<Container>
-				<span className="sectionSubTitle" data-aos="fade-right">
-					Veja o que dizem nossos clientes
+				<div className="sectionTitleBox">
+					<span data-aos="fade-right">Veja o que dizem nossos clientes</span>
+					<h2 data-aos="fade-right">Depoimentos</h2>
+				</div>
+				<span className="sectionText">
+					Toda atenção e cuidado necessários para te entregar uma harmonização,
+					naturalmente, rejuvenescida e uma experiência exclusiva!
 				</span>
-				<h2 className="sectionTitle" data-aos="fade-right">
-					Depoimentos
-				</h2>
+				<a href="#inicio" className="queryBtn">
+					quero agendar uma consulta
+				</a>
+
 				<Carousel data-aos="fade-up">
 					{testimonials.map((e) => (
 						<Carousel.Item interval={3000} key={e.name}>

@@ -5,12 +5,17 @@ const ContactSection = () => {
 	return (
 		<StyledContact id="contato">
 			<Container>
-				<span className="sectionSubTitle" data-aos="fade-right">
-					estamos esperando por você
+				<div className="sectionTitleBox">
+					<span data-aos="fade-right">estamos esperando por você</span>
+					<h2 data-aos="fade-right">Contato</h2>
+				</div>
+				<span className="sectionText">
+					Fique à vontade para entrar em contato em caso de dúvidas ou para obter mais
+					informações sobre nossos serviços
 				</span>
-				<h2 className="sectionTitle" data-aos="fade-right">
-					Contato
-				</h2>
+				<a href="" className="queryBtn">
+					quero agendar uma consulta
+				</a>
 			</Container>
 		</StyledContact>
 	);

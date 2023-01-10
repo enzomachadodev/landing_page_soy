@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { StyledHeader, StyledBurger, StyledNav } from "./style";
-import logo from "../../assets/images/logonormal.JPG";
+import logo from "../../assets/images/logo.png";
 
 const Header = () => {
 	const [open, setOpen] = useState(false);
@@ -18,10 +18,6 @@ const Header = () => {
 		{
 			name: "Depoimentos",
 			href: "#depoimentos",
-		},
-		{
-			name: "Resultados",
-			href: "#resultados",
 		},
 		{
 			name: "Contato",

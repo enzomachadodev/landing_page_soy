@@ -60,11 +60,13 @@ export default createGlobalStyle`
     }
 
     
+    body {
+        overflow-x: hidden;
+    }
 
     body,html{
         width: 100vw;
         height: 100vh;
-        overflow-x: none;
     }
 
     a {
@@ -72,23 +74,27 @@ export default createGlobalStyle`
         font-weight: 500;
         font-size: 1rem;
     }
+    
+    .sectionTitleBox {
+        border-bottom: 2px solid var(--pink);
+        margin-bottom: 30px;
+        padding-left: 1rem;
 
-
-    .sectionTitle {
-        font-family: var(--font-secundary);
+        h2 {
+            font-family: var(--font-secundary);
 		text-transform: uppercase;
 		font-size: 4rem;
 		font-weight: 500;
         color: var(--brown);
-        margin-bottom: 30px;
+        margin-bottom: 10px;
 
-        @media (max-width: 405px) {
+        @media (max-width: 465px) {
             font-size: 2.9rem;
         }
-    }
+        }
 
-    .sectionSubTitle {
-        text-transform: uppercase;
+        span {
+            text-transform: uppercase;
 		font-weight: 400;
         font-size: 1rem;
         color: var(--nude-1);
@@ -97,43 +103,34 @@ export default createGlobalStyle`
             font-size: 0.9rem;
         }
     }
+}
 
-    .proceduresTitle {
-        font-family: var(--font-secundary);
-		text-transform: uppercase;
-		font-size: 3rem;
-		font-weight: 500;
-        color: var(--white);
-    }
-
-    .proceduresDescription {
-        font-weight: 400;
-        font-size: 1.5rem;
-        text-align: start;
-        color: var(--white);
-    }
-
-    .testimonialsName {
-        font-family: var(--font-secundary);
-        color: var(--marrom);
-		text-transform: uppercase;
-		font-weight: 600;
-		font-size: 1.5rem;
-    }
-
-    .testimonialsText {
-        margin-top: 1rem;
+    .sectionText {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.2rem;
+        color: var(--brown);
         max-width: 400px;
-		text-align: center;
-		font-size: 1.5rem;
-		font-weight: 400;
-        color: var(--gray-6);
-
-
-        @media (max-width: 470px) {
-            font-size: 1.125rem;
-        }
     }
+
+    .queryBtn {
+        margin: 20px auto;
+        background-color: var(--pink);
+        text-transform: uppercase;
+        border: 2px solid var(--pink);
+        padding: 15px;
+        color: var(--off-white);
+        transition: .5s;
+        border-radius: 15px;
+
+    }
+
+    .queryBtn:hover {
+        background-color: transparent;
+        color: var(--pink);
+    }
+
+    
 
     
 `;

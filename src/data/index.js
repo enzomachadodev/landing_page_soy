@@ -78,22 +78,40 @@ export const proceduresData = [
 
 export const testimonials = [
 	{
-		img: "https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg.jpg?fit=640,427",
-		name: "alessandra",
-		text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, quisquam! Vel quidem culpa nostrum ipsa veniam vero inventore dolor dicta tenetur laborum, corporis molestias quae cupiditate ea, expedita natus? Modi?",
+		img: require("../assets/images/testimonials/juliaraimundi.jpg"),
+		name: "Julia Raimundi",
+		text: "Decidi fazer o preenchimento labial e fiquei 100% feliz com o resultado,  natural do jeitinho que eu queria, não me vejo mais sem, com toda certeza farei outras vezes. Sem contar que a Dr. Soyrana é uma excelente profissional, a todo momento explica tudo que está fazendo e orienta tudo de forma muito clara. Ótimo atendimento, qualidade e delicadeza única. Muito obrigada pelo profissionalismo com tanto amor. Recomendo a todos de olhos fechados. Já ansiosa para fazer o próximo 😍❤️",
 	},
 
 	{
-		img: "https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg.jpg?fit=640,427",
-		name: "priscila",
-		text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, quisquam! Vel quidem culpa nostrum ipsa veniam vero inventore dolor dicta tenetur laborum, corporis molestias quae cupiditate ea, expedita natus? Modi?",
+		img: require("../assets/images/testimonials/tamaraluiza.png"),
+		name: "Tamara Luiza",
+		text: "Eu amei o procedimento , minha auto estima melhorou 100% fiz o bigode chinês que me incomodava e estou amando o resultado 💖",
 	},
 
 	{
-		img: "https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg.jpg?fit=640,427",
-		name: "bruna",
-		text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, quisquam! Vel quidem culpa nostrum ipsa veniam vero inventore dolor dicta tenetur laborum, corporis molestias quae cupiditate ea, expedita natus? Modi?",
+		img: require("../assets/images/testimonials/luanacastro.jpg"),
+		name: "Luana Castro",
+		text: "Com o objetivo de aumentar minha auto estima, decidi fazer o preenchimento labial , confiei no trabalho da Soyrana , e foi tudo maravilhoso, atenciosa desde a consulta pré procedimento até o pós . Após muita conversa chegamos em acordo com meu objetivo e o que poderia ser feito , procedimento feito no mesmo dia e indolor , com todo cuidado e atenção . Adorei , o único problema é que vicia rsrs",
+	},
+	{
+		img: require("../assets/images/testimonials/lucienechaves.png"),
+		name: "Luciene Chaves",
+		text: "Eu fiz a primeira vez em dezembro de 2020.Foi bem tranquilo. Eu Tinha  ruga da testa entre as sobrancelhas bem evidente e tb a testa já bem franzida, pois já sou uma mulher madura! De lá pra cá faço a cada 6 meses. Sei que não é o ideal,mas está me atendendo bem.Sinceramente,gosto muito do procedimento,pois resolveu algo que me incomodava e muito! Só tenho a agradecer o profissionalismo e competência da Dra.Soyrana,que trabalha com todo o cuidado de deixar um efeito rejuvenescedor bastante natural,proporcionando firmeza na pele sem agredir a nossa aparência. Gratidão! 😘",
+	},
+	{
+		img: require("../assets/images/testimonials/mariaauxiliadora.png"),
+		name: "Maria Auxiliadora",
+		text: "Nossa, a primeira vez que eu fiz o botox foi em 2019, tinha muitas linhas de expressão e então não parei mais, foi a melhor decisão q eu tomei, o resultado foi incrível e o melhor de tudo, ficou natural. Eu acredito que fazer esses procedimentos trabalha não só a aparência, como também a autoestima. Faz você se sentir mais confiante. Estou feliz com a minha aparência. Eu recomendo e continuarei... Eu só posso agradecer!",
+	},
+	{
+		img: require("../assets/images/testimonials/flaviafranck.png"),
+		name: "Flavia Franck",
+		text: "Estava com receio de fazer o botox , mas acabei me rendendo e amei o resultado. Aparência menos cansada e mais jovem",
+	},
+	{
+		img: require("../assets/images/testimonials/nurimacosta.png"),
+		name: "Nurima Costa",
+		text: "Não me sentia bem quando me olhava no espelho e via meu rosto 'caído' Mas, ao mesmo tempo tinha muito medo de fazer algum procedimento e ficar esquisita. A Dra Soyrana conversou muito comigo me passando bastente confiança. Fiz fios de pdo e ficou do jeitinho que eu queria. Nada exagerado e bem natural",
 	},
 ];
-
-export const aboutImages = ["", "", "", "", ""];

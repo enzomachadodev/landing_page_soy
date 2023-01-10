@@ -5,10 +5,10 @@ import FooterSection from "../components/FooterSection/index";
 import Header from "../components/Header/index";
 import HomeSection from "../components/HomeSection/index";
 import ProduceduresSection from "../components/ProceduresSection/index";
-import ResultsSection from "../components/ResultsSection/index";
 import TestimonialSection from "../components/TestimonialsSection/index";
 import { StyledMainPage } from "./style";
 import "aos/dist/aos.css";
+import FinalSection from "../components/FinalSection";
 
 const MainPage = () => {
 	const cont = 1;
@@ -21,8 +21,8 @@ const MainPage = () => {
 			<HomeSection />
 			<ProduceduresSection />
 			<TestimonialSection />
-			<ResultsSection />
 			<ContactSection />
+			<FinalSection />
 			<FooterSection />
 		</StyledMainPage>
 	);

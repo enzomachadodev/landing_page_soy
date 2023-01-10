@@ -7,12 +7,10 @@ const ProduceduresSection = () => {
 	return (
 		<StyledProcedures id="procedimentos">
 			<Container>
-				<span className="sectionSubTitle" data-aos="fade-right">
-					para realçar a sua beleza
-				</span>
-				<h2 className="sectionTitle" data-aos="fade-right">
-					Procedimentos
-				</h2>
+				<div className="sectionTitleBox">
+					<span data-aos="fade-right">para realçar a sua beleza</span>
+					<h2 data-aos="fade-right">Procedimentos</h2>
+				</div>
 				<ul>{proceduresData.map((e) => Card(e))}</ul>
 			</Container>
 		</StyledProcedures>

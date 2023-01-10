@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledHeader = styled.header`
 	position: fixed;
 	z-index: 100;
-	height: 75px;
+	height: 90px;
 	width: 100%;
 	top: 0;
 	display: flex;
@@ -17,6 +17,7 @@ export const StyledHeader = styled.header`
 	-webkit-backdrop-filter: ${({ scroll }) => (scroll ? "blur(6px)" : "blur(0px)")};
 
 	.logoBox {
+		margin-top: 12px;
 		height: 100%;
 		width: 200px;
 		overflow-y: hidden;
@@ -26,7 +27,7 @@ export const StyledHeader = styled.header`
 
 		img {
 			width: 100%;
-			height: 100%;
+			height: 200%;
 		}
 	}
 
@@ -113,7 +114,7 @@ export const StyledNav = styled.ul`
 	display: none;
 	flex-flow: row nowrap;
 
-	top: 75px;
+	top: 90px;
 	display: flex;
 	flex-flow: column nowrap;
 	position: fixed;
