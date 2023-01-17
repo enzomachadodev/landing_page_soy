@@ -18,26 +18,25 @@ const MainPage = () => {
 		Aos.init({ duration: 1500 });
 	}, [cont]);
 
-
-	const [modalShow, setModalShow] = useState(false)
-
+	const [modalShow, setModalShow] = useState(false);
+	const [currentText, setCurrentText] = useState("");
+	const [currentSlider, setCurrentSlider] = useState([]);
 
 	return (
 		<>
-		<TextModal />
-		<StyledMainPage>
-			<TextModal show={modalShow} onHide={() => setModalShow(false)}/>
-			<Header />
-			<HomeSection />
-			<ProduceduresSection setModalShow={setModalShow}/>
-			<TestimonialSection />
-			<ContactSection />
-			<Instagram />
-			<FinalSection />
-			<FooterSection />
-		</StyledMainPage>
+			<TextModal />
+			<StyledMainPage>
+				<TextModal show={modalShow} onHide={() => setModalShow(false)} />
+				<Header />
+				<HomeSection />
+				<ProduceduresSection setModalShow={setModalShow} />
+				<TestimonialSection />
+				<ContactSection />
+				<Instagram />
+				<FinalSection />
+				<FooterSection />
+			</StyledMainPage>
 		</>
-		
 	);
 };
 
