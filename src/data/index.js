@@ -1,6 +1,9 @@
 export const proceduresData = [
 	{
-		img: "https://charlesberres.com.br/blog/wp-content/uploads/2019/09/botox.jpg",
+		img: [
+			require("../assets/images/procedures/botox.jpg"),
+			require("../assets/images/procedures/botox2.jpg"),
+		],
 		name: "BOTOX",
 		description: [
 			"O objetivo desse tratamento é suavizar RUGAS que surgem quando fazemos expressões faciais (rimos, choramos, levantamos as sobrancelhas…)que acabam deixando a nossa pele marcada e com um aspecto ENVELHECIDO.",
@@ -8,7 +11,10 @@ export const proceduresData = [
 		],
 	},
 	{
-		img: "https://www.julianaburigo.com.br/blog/wp-content/uploads/2021/06/preenchimento_labial.jpg",
+		img: [
+			require("../assets/images/procedures/labial.jpg"),
+			require("../assets/images/procedures/labial2.jpg"),
+		],
 		name: "PREENCHIMENTO LABIAL",
 		description: [
 			"Nossos lábios se modificam com o passar dos anos, vão perdendo o volume, o contorno e vão ficando flácidos (formando as indesejáveis trincas e 'bexiguinhas').",
@@ -17,7 +23,10 @@ export const proceduresData = [
 		],
 	},
 	{
-		img: "https://www.giolaser.com.br/wp-content/uploads/2020/04/boa-pele-colageno.jpg",
+		img: [
+			require("../assets/images/procedures/bioestimulador.jpg"),
+			require("../assets/images/procedures/bioestimulador2.jpg"),
+		],
 		name: "BIOESTIMULADORES DE COLÁGENO",
 		description: [
 			"Tem impressão de que seu rosto está derretendo com o passar do tempo?",
@@ -26,7 +35,7 @@ export const proceduresData = [
 		],
 	},
 	{
-		img: "https://p2.trrsf.com/image/fget/cf/1200/1200/middle/images.terra.com/2013/07/13/1-pele-perfeita.jpg",
+		img: [require("../assets/images/procedures/skinbooster.jpg")],
 		name: "SKINBOOSTER",
 		description: [
 			"Skinbooster é um tratamento em que utilizamos um complexo de ativos (vitaminas - aminoácidos e minerais)para a revitalização da sua pele.",
@@ -34,7 +43,10 @@ export const proceduresData = [
 		],
 	},
 	{
-		img: "https://drarobertapansera.com.br/wp-content/uploads/2019/08/preenchimento-facial-dra-roberta-pansera.jpg",
+		img: [
+			require("../assets/images/procedures/preenchimento1.jpg"),
+			require("../assets/images/procedures/preenchimento2.jpg"),
+		],
 		name: "PREENCHIMENTO",
 		description: [
 			"Melhora o contorno facial ,o volume e a sustentação...utilizamos em pontos estratégicos para dar um ”UP” na nossa face.",
@@ -49,7 +61,10 @@ export const proceduresData = [
 		],
 	},
 	{
-		img: "https://img.freepik.com/fotos-gratis/retrato-da-moda-beleza-de-modelo-jovem-loira-com-maquiagem-natural-e-pele-perfeita-posando-tocando-seu-rosto_158538-8756.jpg?w=740&t=st=1673119137~exp=1673119737~hmac=141a26cbd27ac773094e34c43dc4408cdda17e006a81fc7b79c08e99e27852b7",
+		img: [
+			require("../assets/images/procedures/fiosdepdo.jpg"),
+			require("../assets/images/procedures/fiosdepdo2.jpg"),
+		],
 		name: "FIOS DE PDO",
 		description: [
 			"LISOS : bioestimulam colágeno no local onde são aplicados. Possuem uma vantagem, podem ser usados em qualquer região do rosto sem dar volume ",
@@ -57,7 +72,9 @@ export const proceduresData = [
 		],
 	},
 	{
-		img: "https://amandaladeira.com.br/wp-content/uploads/2017/10/Indu%C3%A7%C3%A3o-Percut%C3%A2nea-de-Col%C3%A1geno.jpg",
+		img: [
+			"https://static.vecteezy.com/ti/vetor-gratis/p1/4141669-no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-logo-sign-simple-nature-silhouette-in-frame-ilustracaoial-isolada-vetor.jpg",
+		],
 		name: "INDUÇÃO PERCUTÂNEA DE COLÁGENO",
 		description: [
 			"Um “boom” de ativos para melhora da qualidade da pele e formação de colágeno .",
@@ -66,7 +83,9 @@ export const proceduresData = [
 		],
 	},
 	{
-		img: "https://i0.wp.com/www.mydr.com.au/wp-content/uploads/2019/04/laser_therapy_750.jpeg?fit=750%2C500&ssl=1",
+		img: [
+			"https://static.vecteezy.com/ti/vetor-gratis/p1/4141669-no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-logo-sign-simple-nature-silhouette-in-frame-ilustracaoial-isolada-vetor.jpg",
+		],
 		name: "ILIB TERAPIA",
 		description: [
 			"(Intravascular Laser Irradiation of Blood)",
@@ -113,5 +132,21 @@ export const testimonials = [
 		img: require("../assets/images/testimonials/nurimacosta.png"),
 		name: "Nurima Costa",
 		text: "Não me sentia bem quando me olhava no espelho e via meu rosto 'caído' Mas, ao mesmo tempo tinha muito medo de fazer algum procedimento e ficar esquisita. A Dra Soyrana conversou muito comigo me passando bastente confiança. Fiz fios de pdo e ficou do jeitinho que eu queria. Nada exagerado e bem natural",
+	},
+];
+
+export const addresses = [
+	{
+		name: "ipanema",
+		address: "Quartier Ipanema, R. Visc. de Pirajá, 414 -Ipanema, Rio de Janeiro - RJ",
+	},
+	{
+		name: "recreio",
+		address:
+			"Absolutto Business Towers, Av.das Américas, 19005 -Recreio dos Bandeirantes, Rio de Janeiro - RJ",
+	},
+	{
+		name: "ponteNova",
+		address: "Lanna Shopping Avenida Francisco Vieira Martins, 595 -Palmeiras, Ponte Nova - MG",
 	},
 ];

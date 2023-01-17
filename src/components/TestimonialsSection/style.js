@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import fundo from "../../assets/images/stonebackground.jpg";
 
 export const StyledTestimonial = styled.div`
 	width: 100%;
@@ -7,7 +8,10 @@ export const StyledTestimonial = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	padding-top: 75px;
+	background-image: url(${fundo});
 	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
 
 	.cardSlider {
 		height: 500px;
@@ -20,12 +24,21 @@ export const StyledTestimonial = styled.div`
 		justify-content: flex-start;
 		padding: 1.2rem;
 		border: 2px solid var(--pink);
-		border-radius: 25px;
-		/* border-radius: 40px;
-		background-color: white;
-		-webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.4);
-		-moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.4);
-		box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.4); */
+		border-radius: 8px;
+
+		background: rgba(255, 255, 255, 0.4);
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(8.5px);
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	}
+
+	.carousel-indicators button {
+		background-color: var(--pink);
+	}
+
+	.carousel-control-next,
+	.carousel-control-prev {
+		display: none;
 	}
 
 	.clientInfo {

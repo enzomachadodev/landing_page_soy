@@ -26,7 +26,7 @@ export default createGlobalStyle`
 
 
 
-    --white:#ffffff;
+    --white:#FAFAFA;
     
     
     
@@ -121,13 +121,17 @@ export default createGlobalStyle`
         padding: 15px;
         color: var(--off-white);
         transition: .5s;
-        border-radius: 15px;
+        border-radius: 8px;
+
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 
     }
 
     .queryBtn:hover {
         background-color: transparent;
         color: var(--pink);
+        box-shadow: unset;
     }
 
     
