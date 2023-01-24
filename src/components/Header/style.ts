@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+interface IStyledHeaderProps {
+	scroll: boolean;
+	open: boolean;
+}
+
 export const StyledHeader = styled.header`
 	position: fixed;
 	z-index: 100;
@@ -12,7 +17,8 @@ export const StyledHeader = styled.header`
 	justify-content: space-between;
 	padding: 0rem 1rem;
 	transition: 0.5s;
-	background-color: ${({ scroll }) => (scroll ? "rgba(255, 255, 255, 0.7)" : "transparent")};
+	background-color: ${({ scroll }: IStyledHeaderProps) =>
+		scroll ? "rgba(255, 255, 255, 0.7)" : "transparent"};
 	backdrop-filter: ${({ scroll }) => (scroll ? "blur(6px)" : "blur(0px)")};
 	-webkit-backdrop-filter: ${({ scroll }) => (scroll ? "blur(6px)" : "blur(0px)")};
 
@@ -97,7 +103,7 @@ export const StyledBurger = styled.div`
 		transform-origin: 1px;
 		transition: all 0.3s linear;
 		&:nth-child(1) {
-			transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
+			transform: ${({ open }: IStyledHeaderProps) => (open ? "rotate(45deg)" : "rotate(0)")};
 		}
 		&:nth-child(2) {
 			transform: ${({ open }) => (open ? "translateX(100%)" : "translateX(0)")};
@@ -119,7 +125,7 @@ export const StyledNav = styled.ul`
 	flex-flow: column nowrap;
 	position: fixed;
 	z-index: 400;
-	transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+	transform: ${({ open }: IStyledHeaderProps) => (open ? "translateX(0)" : "translateX(100%)")};
 	right: 0;
 	height: 100vh;
 	width: 100%;

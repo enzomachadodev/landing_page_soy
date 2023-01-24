@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import fundo from "../../assets/images/stonebackground.jpg";
+const fundo = require("../../assets/images/stonebackground.jpg");
 
 export const StyledTestimonial = styled.div`
 	width: 100%;

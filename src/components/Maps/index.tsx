@@ -1,7 +1,11 @@
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 import { StyledMaps } from "./style";
 
-const Maps = ({ props }) => {
+interface IMapsProps {
+	props: string;
+}
+
+const Maps = ({ props }: IMapsProps) => {
 	const { isLoaded } = useJsApiLoader({
 		id: "google-map-script",
 		googleMapsApiKey: "AIzaSyDZNBjnmC8t4veQS_wmHw3TcX3GRhIXh30",

@@ -10,7 +10,6 @@ import ProduceduresSection from "../components/ProceduresSection/index";
 import TestimonialSection from "../components/TestimonialsSection/index";
 import FinalSection from "../components/FinalSection";
 import Instagram from "../components/Instagram";
-import TextModal from "../components/TextModal";
 
 const MainPage = () => {
 	const cont = 1;
@@ -18,18 +17,12 @@ const MainPage = () => {
 		Aos.init({ duration: 1500 });
 	}, [cont]);
 
-	const [modalShow, setModalShow] = useState(false);
-	const [currentText, setCurrentText] = useState("");
-	const [currentSlider, setCurrentSlider] = useState([]);
-
 	return (
 		<>
-			<TextModal />
 			<StyledMainPage>
-				<TextModal show={modalShow} onHide={() => setModalShow(false)} />
 				<Header />
 				<HomeSection />
-				<ProduceduresSection setModalShow={setModalShow} />
+				<ProduceduresSection />
 				<TestimonialSection />
 				<ContactSection />
 				<Instagram />
