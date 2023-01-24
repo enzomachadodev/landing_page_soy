@@ -3,14 +3,13 @@ import { proceduresData } from "../../data";
 import Card from "../ProCards-1/index";
 import { Container } from "../Container/style";
 
-const ProduceduresSection = ({ setModalShow }) => {
+const ProduceduresSection = () => {
 	return (
 		<StyledProcedures id="procedimentos">
 			<Container>
 				<div className="sectionTitleBox">
 					<span data-aos="fade-right">para realçar a sua beleza</span>
 					<h2 data-aos="fade-right">Procedimentos</h2>
-					<button onClick={() => setModalShow(true)}>modal</button>
 				</div>
 				{/* <ProCardSecond /> */}
 				<ul>{proceduresData.map((e, index) => Card(e, index))}</ul>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { StyledHeader, StyledBurger, StyledNav } from "./style";
-import logo from "../../assets/images/logo.png";
+const logo = require("../../assets/images/logo.png");
 
 const Header = () => {
 	const [open, setOpen] = useState(false);
@@ -35,7 +35,7 @@ const Header = () => {
 
 	return (
 		<>
-			<StyledHeader scroll={scroll}>
+			<StyledHeader scroll={scroll} open={open}>
 				<div className="logoBox">
 					<img src={logo} alt="" />
 				</div>
@@ -49,18 +49,18 @@ const Header = () => {
 						</li>
 					))}
 				</ul>
-				<StyledBurger open={open} onClick={() => setOpen(!open)}>
+				<StyledBurger scroll={scroll} open={open} onClick={() => setOpen(!open)}>
 					<div />
 					<div />
 					<div />
 				</StyledBurger>
 			</StyledHeader>
-			<StyledNav open={open}>
+			<StyledNav scroll={scroll} open={open}>
 				{menuOptions.map((o) => (
 					<li>
-						<button href={o.href} onClick={() => setOpen(!open)}>
+						<a href={o.href} onClick={() => setOpen(!open)}>
 							{o.name}
-						</button>
+						</a>
 					</li>
 				))}
 			</StyledNav>

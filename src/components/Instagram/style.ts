@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import colagem from "../../assets/images/colagem.png";
+const colagem = require("../../assets/images/colagem.png");
 
 export const StyledInstagram = styled.div`
 	width: 100%;

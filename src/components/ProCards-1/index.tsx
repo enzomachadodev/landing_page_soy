@@ -1,12 +1,13 @@
 import { StyledCard } from "./style";
 import { Carousel } from "react-bootstrap";
+import { IProcedureObj } from "../../data";
 
-const Card = (proceObj, index) => {
+const Card = (proceObj: IProcedureObj, index: number) => {
 	return (
 		<StyledCard>
 			<Carousel>
 				{proceObj.img.map((img, index) => (
-					<Carousel.Item interval={3000} key={index} controls={false}>
+					<Carousel.Item interval={3000} key={index}>
 						<img className="slideImg" src={img} alt="" />
 					</Carousel.Item>
 				))}

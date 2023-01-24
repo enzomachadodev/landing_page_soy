@@ -1,3 +1,9 @@
+export interface IProcedureObj {
+	img: string[];
+	name: string;
+	description: string[];
+}
+
 export const proceduresData = [
 	{
 		img: [

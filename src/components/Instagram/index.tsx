@@ -1,5 +1,5 @@
 import { StyledInstagram } from "./style";
-import insta from "../../assets/images/insta.png";
+const insta = require("../../assets/images/insta.png");
 
 const Instagram = () => {
 	return (
