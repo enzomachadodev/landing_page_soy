@@ -1,3 +1,4 @@
+import { GlobalProvider } from "./context";
 import MainPage from "./page/index";
 import Global from "./styles/global";
 
@@ -5,7 +6,9 @@ const App = () => {
 	return (
 		<>
 			<Global />
-			<MainPage />
+			<GlobalProvider>
+				<MainPage />
+			</GlobalProvider>
 		</>
 	);
 };

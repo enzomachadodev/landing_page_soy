@@ -1,8 +1,12 @@
 import { StyledCard } from "./style";
 import { Carousel } from "react-bootstrap";
 import { IProcedureObj } from "../../data";
+import { useContext } from "react";
+import { GlobalContext } from "../../context";
 
-const Card = (proceObj: IProcedureObj, index: number) => {
+const Card = (proceObj: IProcedureObj) => {
+	const { setCurrentProcedure, setSliderModal, setTextModal } = useContext(GlobalContext);
+
 	return (
 		<StyledCard>
 			<Carousel>
@@ -16,8 +20,22 @@ const Card = (proceObj: IProcedureObj, index: number) => {
 				<h3>bioestimulador de colageno</h3>
 			</div>
 			<div className="btnBox">
-				<button>Fotos</button>
-				<button>Sobre</button>
+				<button
+					onClick={() => {
+						setCurrentProcedure(proceObj);
+						setSliderModal(true);
+					}}
+				>
+					Fotos
+				</button>
+				<button
+					onClick={() => {
+						setCurrentProcedure(proceObj);
+						setTextModal(true);
+					}}
+				>
+					Sobre
+				</button>
 			</div>
 		</StyledCard>
 	);

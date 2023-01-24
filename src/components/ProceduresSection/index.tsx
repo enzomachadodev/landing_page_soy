@@ -12,7 +12,7 @@ const ProduceduresSection = () => {
 					<h2 data-aos="fade-right">Procedimentos</h2>
 				</div>
 				{/* <ProCardSecond /> */}
-				<ul>{proceduresData.map((e, index) => Card(e, index))}</ul>
+				<ul>{proceduresData.map((e) => Card(e))}</ul>
 			</Container>
 		</StyledProcedures>
 	);

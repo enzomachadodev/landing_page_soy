@@ -14,7 +14,7 @@ const FooterSection = () => {
 				<div className="footerLinks">
 					<ul>
 						<li>
-							<a href="">Fale Conosco</a>
+							<a href="https://wa.me/5521996951789">Fale Conosco</a>
 						</li>
 						<li>
 							<a href="">E-mail</a>
