@@ -10,6 +10,7 @@ import ProduceduresSection from "../components/ProceduresSection/index";
 import TestimonialSection from "../components/TestimonialsSection/index";
 import FinalSection from "../components/FinalSection";
 import Instagram from "../components/Instagram";
+import ModalText from "../components/ModalText";
 
 const MainPage = () => {
 	const cont = 1;
@@ -19,6 +20,7 @@ const MainPage = () => {
 
 	return (
 		<>
+			<ModalText />
 			<StyledMainPage>
 				<Header />
 				<HomeSection />

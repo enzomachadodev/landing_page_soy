@@ -4,11 +4,11 @@ import { IProcedureObj } from "../../data";
 import { useContext } from "react";
 import { GlobalContext } from "../../context";
 
-const Card = (proceObj: IProcedureObj) => {
+const Card = (proceObj: IProcedureObj, index: number) => {
 	const { setCurrentProcedure, setSliderModal, setTextModal } = useContext(GlobalContext);
 
 	return (
-		<StyledCard>
+		<StyledCard key={index}>
 			<Carousel>
 				{proceObj.img.map((img, index) => (
 					<Carousel.Item interval={3000} key={index}>
@@ -17,7 +17,7 @@ const Card = (proceObj: IProcedureObj) => {
 				))}
 			</Carousel>
 			<div className="cardInfo">
-				<h3>bioestimulador de colageno</h3>
+				<h3>{proceObj.name}</h3>
 			</div>
 			<div className="btnBox">
 				<button

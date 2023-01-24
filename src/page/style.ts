@@ -6,4 +6,5 @@ export const StyledMainPage = styled.main`
 	display: flex;
 	flex-direction: column;
 	background-size: cover;
+	position: relative;
 `;
