@@ -23,7 +23,7 @@ export const StyledTestimonial = styled.div`
 		align-items: center;
 		justify-content: flex-start;
 		padding: 1.2rem;
-		border: 2px solid var(--pink);
+		border: 1px solid var(--white);
 		border-radius: 8px;
 
 		background: rgba(255, 255, 255, 0.4);
