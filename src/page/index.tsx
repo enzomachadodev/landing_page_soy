@@ -15,6 +15,7 @@ import { GlobalContext } from "../context";
 import PreContent from "../components/PreContent";
 import WhatsBtn from "../components/WhatsBtn";
 import TextModal from "../components/TextModal";
+import SliderModal from "../components/SliderModal";
 
 const MainPage = () => {
 	const cont = 1;
@@ -22,12 +23,13 @@ const MainPage = () => {
 		Aos.init({ duration: 1500 });
 	}, [cont]);
 
-	const { setTextModal, textModal } = useContext(GlobalContext);
+	const { setTextModal, textModal, setSliderModal, sliderModal } = useContext(GlobalContext);
 
 	return (
 		<>
 			<StyledMainPage>
 				<TextModal show={textModal} onHide={() => setTextModal(false)} />
+				<SliderModal show={sliderModal} onHide={() => setSliderModal(false)} />
 				<Header />
 				<HomeSection />
 				<PreContent />

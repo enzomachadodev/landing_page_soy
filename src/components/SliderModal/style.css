@@ -12,9 +12,12 @@
 }
 
 .modal-body {
-	max-height: 400px;
 	overflow-y: auto;
 	background-color: var(--white);
+}
+
+.modal-body img {
+	width: 100%;
 }
 
 .modal-body p {
