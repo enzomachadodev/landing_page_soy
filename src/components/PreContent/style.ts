@@ -10,7 +10,6 @@ export const StyledPreContent = styled.div`
 
 	.textBox {
 		width: 100%;
-		max-width: 1400px;
 		padding: 1rem;
 		display: flex;
 		flex-direction: column;
