@@ -12,6 +12,10 @@ export const StyledCard = styled.li`
 	margin-bottom: 50px;
 	margin-top: 20px;
 
+	@media (min-width: 720px) {
+		height: 350px;
+	}
+
 	.carousel {
 		width: 150px;
 		height: 150px;
@@ -21,9 +25,14 @@ export const StyledCard = styled.li`
 		border-radius: 8px;
 		overflow: hidden;
 		box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+		@media (min-width: 720px) {
+			width: 280px;
+			height: 280px;
+		}
 	}
 
-	/* .carousel-control-prev,
+	.carousel-control-prev,
 	.carousel-control-next,
 	.carousel-indicators {
 		display: none;
@@ -32,9 +41,6 @@ export const StyledCard = styled.li`
 	.carousel-slide {
 		overflow: hidden;
 		border-radius: 8px;
-	}
-
-	.carousel-inner {
 	}
 
 	.carousel-item {
@@ -50,7 +56,12 @@ export const StyledCard = styled.li`
 		height: 150px;
 		position: relative;
 		border-radius: 8px;
-	} */
+
+		@media (min-width: 720px) {
+			width: 280px;
+			height: 280px;
+		}
+	}
 
 	.cardInfo {
 		margin-top: -20px;
