@@ -23,7 +23,7 @@ export const StyledCard = styled.li`
 		box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 	}
 
-	.carousel-control-prev,
+	/* .carousel-control-prev,
 	.carousel-control-next,
 	.carousel-indicators {
 		display: none;
@@ -50,7 +50,7 @@ export const StyledCard = styled.li`
 		height: 150px;
 		position: relative;
 		border-radius: 8px;
-	}
+	} */
 
 	.cardInfo {
 		margin-top: -20px;

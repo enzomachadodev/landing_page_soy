@@ -5,22 +5,17 @@ interface IStyledModalTextProps {
 }
 
 export const StyledModalText = styled.div`
-	position: absolute;
-	width: 100vw;
-	height: 100vh;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
+	position: fixed;
+	width: 100%;
+	height: 100%;
 	z-index: 10000;
-	display: flex;
+	display: ${({ isVisible }: IStyledModalTextProps) => (isVisible ? "flex" : "none")};
 	align-items: center;
 	justify-content: center;
 	background: rgba(20, 20, 20, 0.7);
-	opacity: 0;
-	pointer-events: none;
 	transition: 0.5s;
 	overflow: hidden;
+	overflow-y: hidden;
 
 	.modalBox {
 		width: 90%;
@@ -95,15 +90,4 @@ export const StyledModalText = styled.div`
 	}
 
 	/* width */
-
-	${({ isVisible }: IStyledModalTextProps) =>
-		isVisible &&
-		css`
-			opacity: 1;
-			pointer-events: auto;
-
-			.modalBox {
-				transform: scale(1);
-			}
-		`}
 `;
