@@ -13,6 +13,7 @@ import Instagram from "../components/Instagram";
 import ModalText from "../components/ModalText";
 import { GlobalContext } from "../context";
 import PreContent from "../components/PreContent";
+import WhatsBtn from "../components/WhatsBtn";
 
 const MainPage = () => {
 	const cont = 1;
@@ -35,6 +36,7 @@ const MainPage = () => {
 				<Instagram />
 				<FinalSection />
 				<FooterSection />
+				<WhatsBtn />
 			</StyledMainPage>
 		</>
 	);
