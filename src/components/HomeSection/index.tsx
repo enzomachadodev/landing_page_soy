@@ -6,7 +6,7 @@ const HomeSection = () => {
 	return (
 		<StyledHome id="inicio">
 			<div className="bannerContainer">
-				<h1>Sua beleza é única!</h1>
+				<h1 data-aos="fade-right">Sua beleza é única!</h1>
 				<img src={profilepic} alt="" />
 			</div>
 		</StyledHome>

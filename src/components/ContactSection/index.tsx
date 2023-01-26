@@ -25,7 +25,7 @@ const ContactSection = () => {
 				</a>
 				{addresses.map((e, index) => (
 					<div className="address" key={index}>
-						<h2>
+						<h2 data-aos="fade-right">
 							{e.name === "ipanema"
 								? "Ipanema - RJ"
 								: e.name === "recreio"
@@ -36,7 +36,7 @@ const ContactSection = () => {
 							<div className="mapBox">
 								<Maps props={e.name} />
 							</div>
-							<div className="textBox">
+							<div className="textBox" data-aos="fade-left">
 								<span>Endereço:</span>
 								<p>{e.address}</p>
 							</div>
