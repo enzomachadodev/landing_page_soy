@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useContext } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { StyledMainPage } from "./style";
@@ -10,6 +10,9 @@ import ProduceduresSection from "../components/ProceduresSection/index";
 import TestimonialSection from "../components/TestimonialsSection/index";
 import FinalSection from "../components/FinalSection";
 import Instagram from "../components/Instagram";
+import ModalText from "../components/ModalText";
+import { GlobalContext } from "../context";
+import PreContent from "../components/PreContent";
 
 const MainPage = () => {
 	const cont = 1;
@@ -17,11 +20,15 @@ const MainPage = () => {
 		Aos.init({ duration: 1500 });
 	}, [cont]);
 
+	const { modal } = useContext(GlobalContext);
+
 	return (
 		<>
-			<StyledMainPage>
+			<StyledMainPage modal={modal}>
+				<ModalText />
 				<Header />
 				<HomeSection />
+				<PreContent />
 				<ProduceduresSection />
 				<TestimonialSection />
 				<ContactSection />

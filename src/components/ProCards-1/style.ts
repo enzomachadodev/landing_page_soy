@@ -11,21 +11,6 @@ export const StyledCard = styled.li`
 	border: 2px solid var(--pink);
 	margin-bottom: 50px;
 	margin-top: 20px;
-	//box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-
-	/* @media (max-width: 1000px) {
-		width: 30%;
-	}
-
-	@media (max-width: 768px) {
-		width: 45%;
-		max-width: 250px;
-		height: 350px;
-	}
-
-	@media (max-width: 480px) {
-		height: 300px;
-	} */
 
 	.carousel {
 		width: 150px;
@@ -38,14 +23,13 @@ export const StyledCard = styled.li`
 		box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 	}
 
-	.carousel-control-prev,
+	/* .carousel-control-prev,
 	.carousel-control-next,
 	.carousel-indicators {
 		display: none;
 	}
 
 	.carousel-slide {
-		/* width: 70px; */
 		overflow: hidden;
 		border-radius: 8px;
 	}
@@ -66,15 +50,7 @@ export const StyledCard = styled.li`
 		height: 150px;
 		position: relative;
 		border-radius: 8px;
-
-		/* @media (max-width: 768px) {
-			height: 246px;
-		}
-
-		@media (max-width: 480px) {
-			height: 150px;
-		} */
-	}
+	} */
 
 	.cardInfo {
 		margin-top: -20px;
@@ -85,8 +61,12 @@ export const StyledCard = styled.li`
 		justify-content: center;
 		h3 {
 			width: 100%;
+			height: 58px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			padding: 2px;
-			font-size: 1.4rem;
+			font-size: 1.25rem;
 			text-align: center;
 			font-family: var(--font-secundary);
 			text-transform: uppercase;

@@ -30,6 +30,10 @@ export const StyledTestimonial = styled.div`
 		backdrop-filter: blur(5px);
 		-webkit-backdrop-filter: blur(8.5px);
 		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+		@media (max-width: 500px) {
+			box-shadow: unset;
+		}
 	}
 
 	.carousel-indicators button {
