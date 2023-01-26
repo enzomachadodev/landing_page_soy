@@ -23,16 +23,18 @@ export const StyledInstagram = styled.div`
 	}
 
 	h2 {
-		font-size: 100%;
+		font-size: 3rem;
 		font-family: var(--font-secundary);
 		color: #fff;
 		text-align: center;
 		font-weight: 600;
 		position: absolute;
-		top: 10%;
+		top: 20%;
+		text-transform: uppercase;
 	}
 
 	.instaBtn {
+		top: 50%;
 		position: absolute;
 		display: flex;
 		flex-direction: row;

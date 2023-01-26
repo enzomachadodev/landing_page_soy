@@ -5,6 +5,7 @@ const Instagram = () => {
 	return (
 		<StyledInstagram>
 			<div className="back" />
+			<h2>Já conhece meu Instagram?</h2>
 			<a
 				href="https://www.instagram.com/_soyranatakenawa/"
 				target="_blank"
