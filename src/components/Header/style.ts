@@ -48,9 +48,9 @@ export const StyledHeader = styled.header`
 
 		a {
 			position: relative;
-			font-weight: 450;
-			font-size: 15px;
-			color: ${({ scroll }) => (scroll ? "black" : "white")};
+			font-weight: 600;
+			font-size: 1rem;
+			color: var(--brown);
 			padding-bottom: 1px;
 			transition: 0.5s;
 			background: none;
@@ -62,10 +62,10 @@ export const StyledHeader = styled.header`
 			position: absolute;
 			width: 100%;
 			transform: scaleX(0);
-			height: 1px;
+			height: 2px;
 			bottom: 0;
 			left: 0;
-			background-color: #000000;
+			background-color: var(--brown);
 			transform-origin: bottom right;
 			transition: transform 0.25s ease-out;
 		}
@@ -91,7 +91,6 @@ export const StyledBurger = styled.div`
 	width: 2rem;
 	height: 2rem;
 	right: 20px;
-	z-index: 20;
 	display: flex;
 	justify-content: space-around;
 	flex-flow: column nowrap;
@@ -99,7 +98,7 @@ export const StyledBurger = styled.div`
 	div {
 		width: 2rem;
 		height: 2px;
-		background-color: var(--black);
+		background-color: var(--brown);
 		transform-origin: 1px;
 		transition: all 0.3s linear;
 		&:nth-child(1) {
@@ -120,17 +119,17 @@ export const StyledNav = styled.ul`
 	display: none;
 	flex-flow: row nowrap;
 
-	top: 90px;
+	top: 0;
 	display: flex;
 	flex-flow: column nowrap;
 	position: fixed;
-	z-index: 400;
+	z-index: 90;
 	transform: ${({ open }: IStyledHeaderProps) => (open ? "translateX(0)" : "translateX(100%)")};
 	right: 0;
 	height: 100vh;
 	width: 100%;
 	max-width: 320px;
-	padding-top: 1rem;
+	padding: 90px 16px;
 	transition: transform 0.3s ease-in-out;
 
 	background: rgba(255, 255, 255, 0.7);
@@ -138,8 +137,9 @@ export const StyledNav = styled.ul`
 	-webkit-backdrop-filter: blur(6px);
 
 	li {
-		height: 50px;
+		height: 60px;
 		width: 100%;
+		border-bottom: 1px solid white;
 	}
 	li a {
 		display: flex;
@@ -147,6 +147,11 @@ export const StyledNav = styled.ul`
 		justify-content: center;
 		width: 100%;
 		height: 100%;
-		color: #fff;
+		color: var(--brown);
+		font-size: 1.2rem;
+	}
+
+	.openedBurguer {
+		margin-left: auto;
 	}
 `;

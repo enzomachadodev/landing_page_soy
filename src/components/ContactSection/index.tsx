@@ -23,8 +23,8 @@ const ContactSection = () => {
 				>
 					quero agendar uma consulta
 				</a>
-				{addresses.map((e) => (
-					<div className="address">
+				{addresses.map((e, index) => (
+					<div className="address" key={index}>
 						<h2>
 							{e.name === "ipanema"
 								? "Ipanema - RJ"

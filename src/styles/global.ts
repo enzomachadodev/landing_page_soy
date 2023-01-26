@@ -108,7 +108,7 @@ export default createGlobalStyle`
     .sectionText {
         margin: 0 auto;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         color: var(--brown);
         max-width: 400px;
     }

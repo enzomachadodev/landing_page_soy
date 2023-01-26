@@ -36,13 +36,13 @@ const Header = () => {
 	return (
 		<>
 			<StyledHeader scroll={scroll} open={open}>
-				<div className="logoBox">
+				<a className="logoBox" href="#inicio">
 					<img src={logo} alt="" />
-				</div>
+				</a>
 
 				<ul className="fixedNav">
-					{menuOptions.map((o) => (
-						<li>
+					{menuOptions.map((o, index) => (
+						<li key={index}>
 							<a className="fixedOptions" href={o.href}>
 								{o.name}
 							</a>
@@ -56,8 +56,8 @@ const Header = () => {
 				</StyledBurger>
 			</StyledHeader>
 			<StyledNav scroll={scroll} open={open}>
-				{menuOptions.map((o) => (
-					<li>
+				{menuOptions.map((o, index) => (
+					<li key={index}>
 						<a href={o.href} onClick={() => setOpen(!open)}>
 							{o.name}
 						</a>
