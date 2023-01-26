@@ -11,18 +11,18 @@ export const StyledFooter = styled.footer`
 	bottom: 0;
 
 	.footerContainer {
-		min-height: 350px;
 		width: 100%;
 		max-width: 1400px;
 		display: flex;
 		flex-direction: row;
-		align-items: center;
+		align-items: flex-start;
 		justify-content: space-between;
 		padding: 1rem;
 		gap: 1rem;
 
 		@media (max-width: 768px) {
 			flex-direction: column;
+			align-items: center;
 		}
 
 		h3 {
@@ -35,12 +35,13 @@ export const StyledFooter = styled.footer`
 	.footerLinks {
 		display: flex;
 		flex-direction: row;
-		align-items: center;
+		align-items: flex-start;
 		justify-content: space-around;
 		height: 100%;
 		width: 100%;
 		max-width: 450px;
 		gap: 1rem;
+		padding-top: 1rem;
 
 		img {
 			width: 150px;
@@ -56,7 +57,6 @@ export const StyledFooter = styled.footer`
 		gap: 1rem;
 		height: 100%;
 		width: auto;
-		padding: 1rem;
 
 		a {
 			color: var(--pink);

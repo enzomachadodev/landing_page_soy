@@ -1,0 +1,53 @@
+.modal-header {
+	background-color: var(--white);
+}
+
+.modal-title {
+	font-family: var(--font-secundary);
+}
+
+.modal-title.h4 {
+	font-size: 2rem;
+	color: var(--dark-brown);
+}
+
+.modal-body {
+	max-height: 400px;
+	overflow-y: auto;
+	background-color: var(--white);
+}
+
+.modal-body p {
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: var(--dark-brown);
+	margin-right: 5px;
+}
+
+.modal-body::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+.modal-body::-webkit-scrollbar-track {
+	background-color: var(--white);
+}
+
+/* Handle */
+.modal-body::-webkit-scrollbar-thumb {
+	background: var(--pink);
+	border-radius: 50px;
+}
+
+div.modal-footer {
+	background-color: var(--white);
+}
+
+.closeBtn {
+	background: var(--pink);
+	border: none;
+	padding: 10px;
+	border-radius: 8px;
+	color: #fff;
+	font-weight: 500;
+}

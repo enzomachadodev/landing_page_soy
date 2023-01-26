@@ -5,23 +5,24 @@ export const StyledCard = styled.li`
 	min-width: 165px;
 	max-width: 300px;
 	border-radius: 8px;
-	height: 220px;
 	overflow: visible;
 	background-color: #fff;
-	border: 2px solid var(--pink);
 	margin-bottom: 50px;
 	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
 	@media (min-width: 720px) {
-		height: 350px;
+		height: 388px;
 	}
 
 	.carousel {
 		width: 150px;
 		height: 150px;
-		top: -30px;
-		left: 50%;
-		transform: translateX(-50%);
 		border-radius: 8px;
 		overflow: hidden;
 		box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -64,7 +65,6 @@ export const StyledCard = styled.li`
 	}
 
 	.cardInfo {
-		margin-top: -20px;
 		height: auto;
 		display: flex;
 		flex-direction: column;
@@ -72,7 +72,7 @@ export const StyledCard = styled.li`
 		justify-content: center;
 		h3 {
 			width: 100%;
-			height: 58px;
+			height: 76px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -90,19 +90,25 @@ export const StyledCard = styled.li`
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
-		width: 150px;
+		width: 100%;
 		margin: 0 auto;
-		margin-top: 7px;
-		border: 2px solid var(--pink);
-		border-radius: 8px;
 		gap: 2px;
-		background-color: var(--pink);
 		overflow: hidden;
 
 		button {
 			width: 50%;
 			border: none;
-			background-color: #fff;
+			color: #fff;
+			background-color: var(--pink);
+			border: 2px solid var(--pink);
+
+			&:nth-child(1) {
+				border-radius: 8px 0px 0px 8px;
+			}
+
+			&:nth-child(2) {
+				border-radius: 0px 8px 8px 0px;
+			}
 		}
 	}
 `;

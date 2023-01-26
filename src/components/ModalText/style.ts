@@ -9,7 +9,7 @@ export const StyledModalText = styled.div`
 	width: 100%;
 	height: 100%;
 	z-index: 10000;
-	display: ${({ isVisible }: IStyledModalTextProps) => (isVisible ? "flex" : "none")};
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	background: rgba(20, 20, 20, 0.7);
@@ -90,4 +90,14 @@ export const StyledModalText = styled.div`
 	}
 
 	/* width */
+
+	${({ isVisible }: IStyledModalTextProps) =>
+		isVisible &&
+		css`
+			opacity: 1;
+			pointer-events: auto;
+			nav {
+				transform: scale(1);
+			}
+		`}
 `;
