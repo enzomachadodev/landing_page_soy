@@ -15,7 +15,7 @@ const TestimonialSection = () => {
 					Toda atenção e cuidado necessários para te entregar uma harmonização,
 					naturalmente, rejuvenescida e uma experiência exclusiva!
 				</span>
-				<a href="#inicio" className="queryBtn">
+				<a href="#inicio" className="queryBtn" target="_blank">
 					quero agendar uma consulta
 				</a>
 
