@@ -55,8 +55,6 @@ export default createGlobalStyle`
     font-family: var(--font-primary);
     text-decoration: none;
     list-style: none;
-    color: black;
-
     }
 
     
