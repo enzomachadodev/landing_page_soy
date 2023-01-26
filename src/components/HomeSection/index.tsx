@@ -1,6 +1,6 @@
 import { StyledHome } from "./style";
 
-const profilepic = require("../../assets/images/teste-3.png");
+const profilepic = require("../../assets/images/profilepic.png");
 
 const HomeSection = () => {
 	return (

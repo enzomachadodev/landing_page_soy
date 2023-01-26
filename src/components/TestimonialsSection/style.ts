@@ -8,6 +8,8 @@ export const StyledTestimonial = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	padding-top: 75px;
+	padding-bottom: 60px;
+
 	background-image: url(${fundo});
 	background-attachment: fixed;
 	background-position: center;
