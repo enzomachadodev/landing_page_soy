@@ -23,6 +23,10 @@ const Header = () => {
 			name: "Contato",
 			href: "#contato",
 		},
+		{
+			name: "Localização",
+			href: "#localization",
+		},
 	];
 
 	const handleScroll = () => {

@@ -14,6 +14,7 @@ export const StyledProcedures = styled.div`
 		margin: 0;
 		margin-top: 3rem;
 		padding: 0;
+		padding-bottom: 75px;
 
 		@media (max-width: 500px) {
 			justify-content: space-around;

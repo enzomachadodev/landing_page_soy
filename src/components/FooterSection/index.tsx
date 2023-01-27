@@ -30,7 +30,11 @@ const FooterSection = () => {
 							<GrInstagram className="iconLogo" />
 							Instagram
 						</a>
-						<a href="">
+						<a
+							href="https://www.tiktok.com/@drasoyranatakenawa?_t=8ZMUG8Vri0D&_r=1"
+							target="_blank"
+							rel="noreferrer"
+						>
 							<SiTiktok className="iconLogo" />
 							TikTok
 						</a>
