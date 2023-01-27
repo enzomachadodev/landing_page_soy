@@ -22,7 +22,7 @@ export const StyledHome = styled.div`
 	overflow: hidden;
 
 	@media (max-width: 500px) {
-		height: 700px;
+		height: 550px;
 	}
 
 	.bannerContainer {
@@ -34,34 +34,81 @@ export const StyledHome = styled.div`
 		justify-content: space-between;
 		align-items: flex-end;
 
-		h1 {
-			position: absolute;
-			margin-left: 3rem;
-			margin-bottom: 20%;
-			font-family: "Allura", cursive;
-			font-size: 4rem;
-			color: var(--dark-brown);
-		}
-
 		img {
 			margin-top: auto;
 			margin-left: auto;
 			height: 120%;
+
+			@media (max-width: 500px) {
+				margin-top: 0px;
+				margin-bottom: auto;
+				height: 90%;
+			}
 		}
 	}
 
 	.textBox {
-		width: 100%;
-		height: 100%;
+		position: absolute;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: center;
-		position: relative;
 		z-index: 1;
+		margin-left: 2rem;
+		margin-bottom: 15%;
+
+		@media (max-width: 768px) {
+			margin-left: 1rem;
+			margin-bottom: 25%;
+		}
+
+		@media (max-width: 500px) {
+			margin-left: 1rem;
+			margin-bottom: 12%;
+		}
 
 		h1 {
-			margin-left: 2rem;
+			font-weight: 300;
+			font-family: var(--font-secundary);
+			text-transform: uppercase;
+			font-size: 3.5rem;
+			max-width: 500px;
+			color: var(--dark-brown);
+
+			@media (max-width: 1000px) {
+				font-size: 3rem;
+				max-width: 400px;
+			}
+
+			@media (max-width: 500px) {
+				font-size: 2rem;
+				font-weight: 400;
+			}
+		}
+
+		h2 {
+			max-width: 500px;
+			color: var(--brown);
+			font-size: 1.5rem;
+
+			@media (max-width: 1000px) {
+				max-width: 400px;
+			}
+
+			@media (max-width: 768px) {
+				max-width: 350px;
+				font-size: 1.1rem;
+			}
+		}
+
+		a {
+			position: relative;
+			font-weight: 600;
+			font-size: 0.9rem;
+			color: var(--brown);
+			transition: 0.5s;
+			background: none;
+			border-bottom: 1px solid var(--brown);
 		}
 	}
 

@@ -31,6 +31,10 @@ export const StyledInstagram = styled.div`
 		position: absolute;
 		top: 20%;
 		text-transform: uppercase;
+
+		@media (max-width: 500px) {
+			font-size: 2rem;
+		}
 	}
 
 	.instaBtn {

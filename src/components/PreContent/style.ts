@@ -6,7 +6,6 @@ export const StyledPreContent = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	border-bottom: 1px solid var(--sand);
 
 	.textBox {
 		width: 100%;
@@ -14,13 +13,17 @@ export const StyledPreContent = styled.div`
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		border-bottom: 1px solid var(--sand);
+		margin-bottom: 5rem;
+		margin-top: 50px;
 
 		h2 {
 			text-align: center;
 			width: 100%;
-			max-width: 400px;
-			color: var(--brown);
+			color: var(--bege-3);
+
+			@media (min-width: 1300px) {
+				font-size: 1.7rem;
+			}
 		}
 	}
 
@@ -35,25 +38,36 @@ export const StyledPreContent = styled.div`
 	.title {
 		text-align: center;
 		color: var(--brown);
+		font-family: var(--font-secundary);
+		font-size: 2rem;
 	}
 
 	.name {
-		font-weight: 700;
+		font-weight: 500;
 		color: var(--dark-brown);
 		margin-top: 2rem;
+		font-size: 2rem;
+
+		@media (max-width: 500px) {
+			font-size: 1.6rem;
+		}
 	}
 
 	.subtitle {
 		text-align: center;
 		color: var(--brown);
+		font-size: 1.1rem;
 	}
 
 	.text {
 		margin-top: 2rem;
 		color: var(--brown);
-		font-size: 1.3rem;
+		font-size: 1.5rem;
 		font-weight: 400;
 		text-align: center;
-		max-width: 400px;
+
+		@media (max-width: 500px) {
+			font-size: 1.2rem;
+		}
 	}
 `;

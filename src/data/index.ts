@@ -78,9 +78,7 @@ export const proceduresData = [
 		],
 	},
 	{
-		img: [
-			"https://static.vecteezy.com/ti/vetor-gratis/p1/4141669-no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-logo-sign-simple-nature-silhouette-in-frame-ilustracaoial-isolada-vetor.jpg",
-		],
+		img: [require("../assets/images/procedures/inducao.jpg")],
 		name: "INDUÇÃO PERCUTÂNEA DE COLÁGENO",
 		description: [
 			"Um “boom” de ativos para melhora da qualidade da pele e formação de colágeno .",
@@ -89,9 +87,7 @@ export const proceduresData = [
 		],
 	},
 	{
-		img: [
-			"https://static.vecteezy.com/ti/vetor-gratis/p1/4141669-no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-logo-sign-simple-nature-silhouette-in-frame-ilustracaoial-isolada-vetor.jpg",
-		],
+		img: [require("../assets/images/procedures/ilib.JPG")],
 		name: "ILIB TERAPIA",
 		description: [
 			"(Intravascular Laser Irradiation of Blood)",

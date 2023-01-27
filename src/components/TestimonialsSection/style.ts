@@ -8,12 +8,13 @@ export const StyledTestimonial = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	padding-top: 75px;
-	padding-bottom: 60px;
+	padding-bottom: 75px;
+	background-color: #f7ecdb;
 
-	background-image: url(${fundo});
+	/* background-image: url(${fundo});
 	background-attachment: fixed;
 	background-position: center;
-	background-size: cover;
+	background-size: cover; */
 
 	.cardSlider {
 		height: 500px;
@@ -28,7 +29,7 @@ export const StyledTestimonial = styled.div`
 		border: 1px solid var(--white);
 		border-radius: 8px;
 
-		background: rgba(255, 255, 255, 0.4);
+		background: rgba(255, 255, 255, 0.6);
 		backdrop-filter: blur(5px);
 		-webkit-backdrop-filter: blur(8.5px);
 		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;

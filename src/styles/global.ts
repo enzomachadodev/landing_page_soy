@@ -81,13 +81,13 @@ export default createGlobalStyle`
         h2 {
             font-family: var(--font-secundary);
 		text-transform: uppercase;
-		font-size: 4rem;
+		font-size: 3.5rem;
 		font-weight: 500;
         color: var(--brown);
         margin-bottom: 10px;
 
-        @media (max-width: 465px) {
-            font-size: 2.9rem;
+        @media (max-width: 500px) {
+            font-size: 2.5rem;
         }
         }
 
@@ -108,7 +108,7 @@ export default createGlobalStyle`
         text-align: center;
         font-size: 1.3rem;
         color: var(--brown);
-        max-width: 400px;
+        max-width: 800px;
     }
 
     .queryBtn {

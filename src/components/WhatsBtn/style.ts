@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const StyledWhatsBtn = styled.a`
-	width: 50px;
-	height: 50px;
+	width: 70px;
+	height: 70px;
 	position: fixed;
 	z-index: 2;
-	bottom: 2px;
-	right: 2px;
+	bottom: 10px;
+	right: 10px;
 
 	img {
 		width: 100%;

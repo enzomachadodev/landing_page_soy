@@ -1,7 +1,6 @@
 import { Container } from "../Container/style";
-import Maps from "../Maps";
+
 import { StyledContact } from "./style";
-import { addresses } from "../../data";
 
 const ContactSection = () => {
 	return (
@@ -23,26 +22,6 @@ const ContactSection = () => {
 				>
 					quero agendar uma consulta
 				</a>
-				{addresses.map((e, index) => (
-					<div className="address" key={index}>
-						<h2 data-aos="fade-right">
-							{e.name === "ipanema"
-								? "Ipanema - RJ"
-								: e.name === "recreio"
-								? "Recreio - RJ"
-								: "Ponte Nova - MG"}
-						</h2>
-						<div className="divBox">
-							<div className="mapBox">
-								<Maps props={e.name} />
-							</div>
-							<div className="textBox" data-aos="fade-left">
-								<span>Endereço:</span>
-								<p>{e.address}</p>
-							</div>
-						</div>
-					</div>
-				))}
 			</Container>
 		</StyledContact>
 	);

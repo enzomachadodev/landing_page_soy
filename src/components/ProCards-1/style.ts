@@ -7,7 +7,6 @@ export const StyledCard = styled.li`
 	border-radius: 8px;
 	overflow: visible;
 	background-color: #fff;
-	margin-bottom: 50px;
 	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
@@ -72,7 +71,7 @@ export const StyledCard = styled.li`
 		justify-content: center;
 		h3 {
 			width: 100%;
-			height: 76px;
+			height: 80px;
 			display: flex;
 			align-items: center;
 			justify-content: center;

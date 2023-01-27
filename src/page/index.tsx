@@ -8,7 +8,7 @@ import Header from "../components/Header/index";
 import HomeSection from "../components/HomeSection/index";
 import ProduceduresSection from "../components/ProceduresSection/index";
 import TestimonialSection from "../components/TestimonialsSection/index";
-import FinalSection from "../components/FinalSection";
+import LocalizationSection from "../components/LocalizationSection";
 import Instagram from "../components/Instagram";
 import ModalText from "../components/ModalText";
 import { GlobalContext } from "../context";
@@ -37,7 +37,7 @@ const MainPage = () => {
 				<TestimonialSection />
 				<ContactSection />
 				<Instagram />
-				<FinalSection />
+				<LocalizationSection />
 				<FooterSection />
 				<WhatsBtn />
 			</StyledMainPage>
