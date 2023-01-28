@@ -6,7 +6,7 @@ import { SiTiktok } from "react-icons/si";
 import { BsLinkedin, BsGithub, BsFillTelephoneFill } from "react-icons/bs";
 
 const FooterSection = () => {
-	const selo = require("../../assets/images/selo.png");
+	const selo = require("../../assets/images/selo.PNG");
 
 	return (
 		<StyledFooter>
