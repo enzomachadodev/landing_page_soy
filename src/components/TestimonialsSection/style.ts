@@ -1,5 +1,4 @@
 import styled from "styled-components";
-const fundo = require("../../assets/images/stonebackground.jpg");
 
 export const StyledTestimonial = styled.div`
 	width: 100%;
@@ -10,11 +9,6 @@ export const StyledTestimonial = styled.div`
 	padding-top: 75px;
 	padding-bottom: 75px;
 	background-color: #f7ecdb;
-
-	/* background-image: url(${fundo});
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover; */
 
 	.cardSlider {
 		height: 500px;
