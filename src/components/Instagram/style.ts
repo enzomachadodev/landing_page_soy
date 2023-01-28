@@ -24,6 +24,7 @@ export const StyledInstagram = styled.div`
 
 		@media (max-width: 500px) {
 			background-image: url(${colagem_2});
+			background-attachment: unset;
 		}
 	}
 
