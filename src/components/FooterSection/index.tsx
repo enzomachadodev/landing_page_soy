@@ -4,9 +4,10 @@ import { GrInstagram } from "react-icons/gr";
 import { ImWhatsapp } from "react-icons/im";
 import { SiTiktok } from "react-icons/si";
 import { BsLinkedin, BsGithub, BsFillTelephoneFill } from "react-icons/bs";
-const selo = require("../../assets/images/selo.png");
 
 const FooterSection = () => {
+	const selo = require("../../assets/images/selo.png");
+
 	return (
 		<StyledFooter>
 			<div className="footerContainer">

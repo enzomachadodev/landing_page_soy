@@ -1,8 +1,7 @@
 import { StyledHome } from "./style";
 
-const profilepic = require("../../assets/images/profilepic.png");
-
 const HomeSection = () => {
+	const profilepic = require("../../assets/images/profilepic.png");
 	return (
 		<StyledHome id="inicio">
 			<div className="bannerContainer">

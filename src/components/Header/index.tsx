@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { StyledHeader, StyledBurger, StyledNav } from "./style";
-const logo = require("../../assets/images/logo.png");
 
 const Header = () => {
+	const logo = require("../../assets/images/logo.png");
 	const [open, setOpen] = useState(false);
 	const [scroll, setScroll] = useState(false);
 
