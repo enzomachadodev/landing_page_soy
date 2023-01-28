@@ -21,15 +21,16 @@ button.btn-close {
 	display: flex;
 	flex-direction: column;
 	align-itens: center;
+	justify-content: center;
 	padding: 1rem;
-	min-height: 450px;
+	min-height: 420px;
 	width: 100%;
 }
 
 .modal-body img {
 	width: 100%;
-	max-width: 400px;
-	max-height: 400px;
+	max-width: 380px;
+	max-height: 380px;
 	margin: 0 auto;
 }
 
