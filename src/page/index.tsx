@@ -10,7 +10,6 @@ import ProduceduresSection from "../components/ProceduresSection/index";
 import TestimonialSection from "../components/TestimonialsSection/index";
 import LocalizationSection from "../components/LocalizationSection";
 import Instagram from "../components/Instagram";
-import ModalText from "../components/ModalText";
 import { GlobalContext } from "../context";
 import PreContent from "../components/PreContent";
 import WhatsBtn from "../components/WhatsBtn";
