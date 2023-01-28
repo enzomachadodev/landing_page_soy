@@ -23,6 +23,7 @@ button.btn-close {
 	align-itens: center;
 	padding: 1rem;
 	overflow: hidden;
+	min-height: 420px;
 }
 
 .modal-body img {
