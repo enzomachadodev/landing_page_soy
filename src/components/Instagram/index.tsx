@@ -1,5 +1,5 @@
 import { StyledInstagram } from "./style";
-const insta = require("../../assets/images/insta.png");
+import { GrInstagram } from "react-icons/gr";
 
 const Instagram = () => {
 	return (
@@ -13,7 +13,7 @@ const Instagram = () => {
 				className="instaBtn"
 			>
 				<div className="logoBox">
-					<img src={insta} alt="" />
+					<GrInstagram className="igLogo" />
 				</div>
 				<span className="nameBox">@_soyranatakenawa</span>
 			</a>

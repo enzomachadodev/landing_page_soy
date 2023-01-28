@@ -1,5 +1,6 @@
 import styled from "styled-components";
 const colagem = require("../../assets/images/colagem.png");
+const colagem_2 = require("../../assets/images/colagem_2.png");
 
 export const StyledInstagram = styled.div`
 	width: 100%;
@@ -20,6 +21,10 @@ export const StyledInstagram = styled.div`
 		background-attachment: fixed;
 		position: relative;
 		z-index: 0;
+
+		@media (max-width: 500px) {
+			background-image: url(${colagem_2});
+		}
 	}
 
 	h2 {
@@ -44,7 +49,7 @@ export const StyledInstagram = styled.div`
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		width: 80%;
+		width: 300px;
 		max-width: 300px;
 		height: 100px;
 		border-radius: 8px;
@@ -80,6 +85,11 @@ export const StyledInstagram = styled.div`
 		);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 
+		@media (max-width: 500px) {
+			width: 250px;
+			height: 80px;
+		}
+
 		.logoBox {
 			height: 100%;
 			width: 30%;
@@ -88,9 +98,13 @@ export const StyledInstagram = styled.div`
 			justify-content: center;
 			border-right: 1px solid var(--gray-1);
 			font-size: 50px;
+		}
 
-			img {
-				height: 130%;
+		.igLogo {
+			color: #fff;
+
+			@media (max-width: 500px) {
+				font-size: 2.7rem;
 			}
 		}
 
@@ -102,6 +116,10 @@ export const StyledInstagram = styled.div`
 			display: flex;
 			align-items: center;
 			justify-content: center;
+
+			@media (max-width: 500px) {
+				font-size: 0.9rem;
+			}
 		}
 	}
 `;

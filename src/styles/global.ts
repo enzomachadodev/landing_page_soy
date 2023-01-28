@@ -57,15 +57,19 @@ export default createGlobalStyle`
     list-style: none;
     }
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     
     body {
         overflow-x: hidden;
     }
 
+
     body,html{
         width: 100vw;
         height: 100vh;
-        scroll-behavior: smooth;
     }
 
     a {
