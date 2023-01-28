@@ -65,6 +65,7 @@ export default createGlobalStyle`
     body,html{
         width: 100vw;
         height: 100vh;
+        scroll-behavior: smooth;
     }
 
     a {

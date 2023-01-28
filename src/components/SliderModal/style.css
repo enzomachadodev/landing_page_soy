@@ -11,12 +11,18 @@
 	color: var(--dark-brown);
 }
 
+button.btn-close {
+	font-size: 20px;
+	color: var(--brown);
+}
+
 .modal-body {
 	background-color: var(--white);
 	display: flex;
 	flex-direction: column;
 	align-itens: center;
-	padding: 1rem 0rem;
+	padding: 1rem;
+	overflow: hidden;
 }
 
 .modal-body img {
@@ -52,7 +58,13 @@ div.modal-footer {
 	background-color: var(--white);
 }
 
-.closeBtn {
+.btnBox {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.moveBtn {
 	background: var(--pink);
 	border: none;
 	padding: 10px;
