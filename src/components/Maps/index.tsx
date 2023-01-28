@@ -8,7 +8,7 @@ interface IMapsProps {
 const Maps = ({ props }: IMapsProps) => {
 	const { isLoaded } = useJsApiLoader({
 		id: "google-map-script",
-		googleMapsApiKey: "AIzaSyDZNBjnmC8t4veQS_wmHw3TcX3GRhIXh30",
+		googleMapsApiKey: process.env.REACT_APP_KEY as string,
 	});
 
 	const ipanema = {
