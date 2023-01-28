@@ -11,7 +11,6 @@ interface ISliderModalProps {
 const SliderModal = (props: ISliderModalProps) => {
 	const { currentProcedure } = useContext(GlobalContext);
 	const [current, setCurrent] = useState(0);
-	const [loading, setLoading] = useState(false);
 
 	const length = currentProcedure?.img.length;
 

@@ -13,7 +13,7 @@ const HomeSection = () => {
 						Nossos protocolos de tratamento são feitos de forma individualizada. Afinal,
 						você é único(a)!
 					</h2>
-					<a data-aos="fade-right" href="#diferenciais" id="diferenciais">
+					<a href="#diferenciais" id="diferenciais">
 						Saiba mais
 					</a>
 				</div>
