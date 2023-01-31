@@ -4,7 +4,7 @@ export const StyledCard = styled.li`
 	width: 45%;
 	min-width: 165px;
 	max-width: 300px;
-	border-radius: 8px;
+	border-radius: 10px;
 	overflow: visible;
 	background-color: #fff;
 	margin-top: 20px;
@@ -92,14 +92,16 @@ export const StyledCard = styled.li`
 		width: 100%;
 		margin: 0 auto;
 		gap: 2px;
+		border-radius: 8px;
 		overflow: hidden;
 
 		button {
+			padding: 5px;
 			width: 50%;
 			border: none;
 			color: #fff;
 			background-color: var(--pink);
-			border: 2px solid var(--pink);
+			transition: 0.5s;
 
 			&:nth-child(1) {
 				border-radius: 8px 0px 0px 8px;
@@ -108,6 +110,10 @@ export const StyledCard = styled.li`
 			&:nth-child(2) {
 				border-radius: 0px 8px 8px 0px;
 			}
+		}
+
+		button:hover {
+			background-color: rgba(212, 158, 141, 0.8);
 		}
 	}
 `;

@@ -120,20 +120,18 @@ export default createGlobalStyle`
         margin: 20px auto;
         background-color: var(--pink);
         text-transform: uppercase;
-        border: 2px solid var(--pink);
         padding: 15px;
         color: var(--off-white);
         transition: .5s;
         border-radius: 8px;
-
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 
     }
 
     .queryBtn:hover {
-        background-color: transparent;
-        color: var(--pink);
+        color: var(--off-white);
+        background-color: rgba(212, 158, 141, 0.7);
         box-shadow: unset;
     }
 

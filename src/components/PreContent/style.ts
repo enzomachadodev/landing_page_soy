@@ -7,45 +7,19 @@ export const StyledPreContent = styled.div`
 	flex-direction: column;
 	align-items: center;
 
-	.textBox {
-		width: 100%;
-		padding: 1rem;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin-bottom: 5rem;
-		margin-top: 50px;
-
-		h2 {
-			text-align: center;
-			width: 100%;
-			color: var(--bege-3);
-
-			@media (min-width: 1300px) {
-				font-size: 1.7rem;
-			}
-		}
-	}
-
 	.difeBox {
 		padding: 1rem;
+		padding-bottom: 0;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-	}
-
-	.title {
-		text-align: center;
-		color: var(--brown);
-		font-family: var(--font-secundary);
-		font-size: 2rem;
 	}
 
 	.name {
 		font-weight: 500;
 		color: var(--dark-brown);
-		margin-top: 2rem;
+		margin-top: 3.3rem;
 		font-size: 2rem;
 
 		@media (max-width: 500px) {

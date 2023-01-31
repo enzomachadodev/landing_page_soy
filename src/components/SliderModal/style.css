@@ -32,6 +32,7 @@ button.btn-close {
 	max-width: 380px;
 	max-height: 380px;
 	margin: 0 auto;
+	border-radius: 8px;
 }
 
 .modal-body p {
@@ -68,16 +69,24 @@ div.modal-footer {
 }
 
 .btnBox {
+	gap: 2px;
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
+	border-radius: 8px;
+	overflow: hidden;
 }
 
 .moveBtn {
 	background: var(--pink);
+	width: 50%;
 	border: none;
 	padding: 10px;
-	border-radius: 8px;
 	color: #fff;
 	font-weight: 500;
+	transition: 0.5s;
+}
+
+.moveBtn:hover {
+	background-color: rgba(212, 158, 141, 0.7);
 }

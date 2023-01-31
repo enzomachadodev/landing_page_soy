@@ -12,7 +12,7 @@ export const StyledProcedures = styled.div`
 		flex-wrap: wrap;
 		justify-content: space-around;
 		margin: 0;
-		margin-top: 3rem;
+		margin-top: 1rem;
 		padding: 0;
 		padding-bottom: 75px;
 

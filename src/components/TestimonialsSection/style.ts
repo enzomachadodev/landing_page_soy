@@ -7,7 +7,7 @@ export const StyledTestimonial = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	padding-top: 75px;
-	padding-bottom: 75px;
+	padding-bottom: 50px;
 	background-color: #f7ecdb;
 
 	.cardSlider {
@@ -15,6 +15,7 @@ export const StyledTestimonial = styled.div`
 		width: 100%;
 		max-width: 500px;
 		margin: 50px auto;
+		margin-top: 10px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -39,7 +40,19 @@ export const StyledTestimonial = styled.div`
 
 	.carousel-control-next,
 	.carousel-control-prev {
-		display: none;
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+
+	span.carousel-control-prev-icon,
+	span.carousel-control-next-icon {
+		padding: 1 rem;
+		background-color: var(--pink);
+		border-radius: 8px;
+		height: 58px;
+		border: 2px solid var(--pink);
+		opacity: 1;
 	}
 
 	.clientInfo {
