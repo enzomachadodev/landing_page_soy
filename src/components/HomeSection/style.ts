@@ -33,6 +33,7 @@ export const StyledHome = styled.div`
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: flex-end;
+		position: relative;
 
 		img {
 			margin-top: auto;

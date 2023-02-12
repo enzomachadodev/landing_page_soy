@@ -18,7 +18,7 @@ const HomeSection = () => {
 					</a>
 				</div>
 
-				<img src={profilepic} alt="" />
+				<img src={profilepic} alt="" data-aos="fade-up" />
 			</div>
 		</StyledHome>
 	);
